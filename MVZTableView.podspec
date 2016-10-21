@@ -47,4 +47,5 @@ end
 s.dependency 'ReactiveCocoa'
 s.dependency 'RSBTableViewManager'
 s.dependency 'MVZMutableArray'
+s.dependency 'MVZExtensions'
 end
