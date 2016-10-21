@@ -1,16 +1,127 @@
 PODS:
-  - MVZTableView (0.1.0)
+  - MVZExtensions (0.0.1):
+    - ReactiveCocoa (~> 2.5)
+  - MVZMutableArray (0.0.1):
+    - ReactiveCocoa (~> 2.5)
+  - MVZTableView (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/SectionFactories (= 0.0.1)
+    - MVZTableView/Sections (= 0.0.1)
+    - MVZTableView/ViewModel (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/SectionFactories (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/SectionFactories/SectionItemsFactory (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/SectionFactories/SectionItemsFactory (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/Sections/Section (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/Sections/Section/CellFactories (= 0.0.1)
+    - MVZTableView/Sections/Section/Cells (= 0.0.1)
+    - MVZTableView/Sections/Section/SectionModel (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section/CellFactories (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/Sections/Section/CellFactories/CellItemsFactory (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section/CellFactories/CellItemsFactory (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section/Cells (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/Sections/Section/Cells/Cell (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section/Cells/Cell (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - MVZTableView/Sections/Section/Cells/Cell/CellModel (= 0.0.1)
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section/Cells/Cell/CellModel (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/Sections/Section/SectionModel (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - MVZTableView/ViewModel (0.0.1):
+    - MVZExtensions
+    - MVZMutableArray
+    - ReactiveCocoa (~> 2.5)
+    - RSBTableViewManager
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RSBTableViewManager (0.1.10):
+    - RSBTableViewManager/Items (= 0.1.10)
+    - RSBTableViewManager/Protocols (= 0.1.10)
+  - RSBTableViewManager/Items (0.1.10):
+    - RSBTableViewManager/Protocols
+  - RSBTableViewManager/Protocols (0.1.10)
 
 DEPENDENCIES:
+  - MVZExtensions (from `https://github.com/medvedzzz/MVZExtensions`)
+  - MVZMutableArray (from `https://github.com/medvedzzz/MVZMutableArray.git`)
   - MVZTableView (from `../`)
+  - RSBTableViewManager (from `https://bitbucket.org/rosberryteam/rsbtableviewmanager.git`)
 
 EXTERNAL SOURCES:
+  MVZExtensions:
+    :git: https://github.com/medvedzzz/MVZExtensions
+  MVZMutableArray:
+    :git: https://github.com/medvedzzz/MVZMutableArray.git
   MVZTableView:
     :path: "../"
+  RSBTableViewManager:
+    :git: https://bitbucket.org/rosberryteam/rsbtableviewmanager.git
+
+CHECKOUT OPTIONS:
+  MVZExtensions:
+    :commit: 551ffe523e4e4c0da3d001d27d8c496ffff26aa3
+    :git: https://github.com/medvedzzz/MVZExtensions
+  MVZMutableArray:
+    :commit: 2444825b150caccb8bb0ff548c8f829753891d97
+    :git: https://github.com/medvedzzz/MVZMutableArray.git
+  RSBTableViewManager:
+    :commit: 999716d5f1ff502db295078e103f12c7edb943d4
+    :git: https://bitbucket.org/rosberryteam/rsbtableviewmanager.git
 
 SPEC CHECKSUMS:
-  MVZTableView: 9de073b6702af3cf854aaafedc23df7c2587ed69
+  MVZExtensions: 6802482035ffe98ac592d8aabf342e589a5add25
+  MVZMutableArray: aff6a9d6089e0a4d81fefe0b3df57ac11ac8fff8
+  MVZTableView: 41c2092300636c8a2394d936127f4a96854da1a5
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RSBTableViewManager: 261bebc01dfcaddb108b24d09a41d0bcf6ba5478
 
-PODFILE CHECKSUM: 531670cab55af2fccc71d64463c7d5ef8028e0bb
+PODFILE CHECKSUM: 92a87f18a73879141073bbc23d5ebef4ee58c013
 
 COCOAPODS: 1.1.0.rc.3

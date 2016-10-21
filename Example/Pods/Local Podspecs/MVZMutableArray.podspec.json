@@ -1,0 +1,24 @@
+{
+  "name": "MVZMutableArray",
+  "version": "0.0.1",
+  "summary": "iOS observable array",
+  "homepage": "https://github.com/medvedzzz/MVZMutableArray",
+  "license": "MIT",
+  "authors": {
+    "Evgeny Mikhaylov": "evgenmikhaylov@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/medvedzzz/MVZMutableArray.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "MVZMutableArray/*.{h,m}",
+  "dependencies": {
+    "ReactiveCocoa": [
+      "~> 2.5"
+    ]
+  }
+}

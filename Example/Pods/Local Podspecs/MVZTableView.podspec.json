@@ -1,22 +1,91 @@
 {
   "name": "MVZTableView",
-  "version": "0.1.0",
-  "summary": "A short description of MVZTableView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/MVZTableView",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "version": "0.0.1",
+  "summary": "UITableView with MVVM",
+  "homepage": "https://github.com/medvedzzz/MVZTableView",
+  "license": "MIT",
   "authors": {
     "Evgeny Mikhaylov": "evgenmikhaylov@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/MVZTableView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/medvedzzz/MVZTableView.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MVZTableView/Classes/**/*"
+  "requires_arc": true,
+  "source_files": "MVZTableView/*.{h,m}",
+  "dependencies": {
+    "ReactiveCocoa": [
+      "~> 2.5"
+    ],
+    "RSBTableViewManager": [
+
+    ],
+    "MVZMutableArray": [
+
+    ],
+    "MVZExtensions": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "ViewModel",
+      "source_files": "MVZTableView/ViewModel/*.{h,m}"
+    },
+    {
+      "name": "SectionFactories",
+      "source_files": "MVZTableView/SectionFactories/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "SectionItemsFactory",
+          "source_files": "MVZTableView/SectionFactories/SectionItemsFactory/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "Sections",
+      "source_files": "MVZTableView/Sections/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Section",
+          "source_files": "MVZTableView/Sections/Section/*.{h,m}",
+          "subspecs": [
+            {
+              "name": "SectionModel",
+              "source_files": "MVZTableView/Sections/Section/SectionModel/*.{h,m}"
+            },
+            {
+              "name": "CellFactories",
+              "source_files": "MVZTableView/Sections/Section/CellFactories/*.{h,m}",
+              "subspecs": [
+                {
+                  "name": "CellItemsFactory",
+                  "source_files": "MVZTableView/Sections/Section/CellFactories/CellItemsFactory/*.{h,m}"
+                }
+              ]
+            },
+            {
+              "name": "Cells",
+              "source_files": "MVZTableView/Sections/Section/Cells/*.{h,m}",
+              "subspecs": [
+                {
+                  "name": "Cell",
+                  "source_files": "MVZTableView/Sections/Section/Cells/Cell/*.{h,m}",
+                  "subspecs": [
+                    {
+                      "name": "CellModel",
+                      "source_files": "MVZTableView/Sections/Section/Cells/Cell/CellModel/*.{h,m}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

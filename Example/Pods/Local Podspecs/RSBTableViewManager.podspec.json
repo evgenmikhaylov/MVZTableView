@@ -1,0 +1,34 @@
+{
+  "name": "RSBTableViewManager",
+  "version": "0.1.10",
+  "summary": "iOS library for UITableView managing",
+  "homepage": "https://bitbucket.org/rosberryteam/rsbtableviewmanager",
+  "license": "MIT",
+  "authors": {
+    "Rosberry": "info@rosberry.com"
+  },
+  "source": {
+    "git": "https://bitbucket.org/rosberryteam/rsbtableviewmanager.git",
+    "tag": "0.1.10"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "RSBTableViewManager/*.{h,m}",
+  "subspecs": [
+    {
+      "name": "Protocols",
+      "source_files": "RSBTableViewManager/Protocols/*.{h,m}"
+    },
+    {
+      "name": "Items",
+      "dependencies": {
+        "RSBTableViewManager/Protocols": [
+
+        ]
+      },
+      "source_files": "RSBTableViewManager/Items/*.{h,m}"
+    }
+  ]
+}

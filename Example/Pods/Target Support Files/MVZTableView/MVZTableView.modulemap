@@ -1,0 +1,6 @@
+framework module MVZTableView {
+  umbrella header "MVZTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

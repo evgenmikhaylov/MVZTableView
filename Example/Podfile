@@ -1,11 +1,14 @@
 use_frameworks!
 
 target 'MVZTableView_Example' do
+  
   pod 'MVZTableView', :path => '../'
+  pod 'MVZExtensions', :git => 'https://github.com/medvedzzz/MVZExtensions'
+  pod 'MVZMutableArray', :git => 'https://github.com/medvedzzz/MVZMutableArray.git'
+  pod 'RSBTableViewManager', :git => 'https://bitbucket.org/rosberryteam/rsbtableviewmanager.git'
 
   target 'MVZTableView_Tests' do
     inherit! :search_paths
-
-    
   end
+  
 end

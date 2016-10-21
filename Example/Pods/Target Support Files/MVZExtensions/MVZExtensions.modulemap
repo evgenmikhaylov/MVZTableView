@@ -1,0 +1,6 @@
+framework module MVZExtensions {
+  umbrella header "MVZExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

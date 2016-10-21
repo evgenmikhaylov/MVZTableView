@@ -82,3 +82,18 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/MVZExtensions/MVZExtensions.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MVZMutableArray/MVZMutableArray.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MVZTableView/MVZTableView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RSBTableViewManager/RSBTableViewManager.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/MVZExtensions/MVZExtensions.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MVZMutableArray/MVZMutableArray.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MVZTableView/MVZTableView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RSBTableViewManager/RSBTableViewManager.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
+fi

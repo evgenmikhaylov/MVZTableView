@@ -1,0 +1,6 @@
+framework module MVZMutableArray {
+  umbrella header "MVZMutableArray-umbrella.h"
+
+  export *
+  module * { export * }
+}
