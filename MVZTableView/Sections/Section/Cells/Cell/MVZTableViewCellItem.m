@@ -10,8 +10,7 @@
 
 #import "MVZTableViewCellModelProtocol.h"
 
-#import "ReactiveCocoa+Extension.h"
-#import "RACChannel+Extension.h"
+#import "RACChannel+MVZExtensions.h"
 
 @interface MVZTableViewCellItem ()
 

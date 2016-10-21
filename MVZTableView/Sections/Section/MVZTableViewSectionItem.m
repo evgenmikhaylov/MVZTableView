@@ -12,8 +12,8 @@
 #import "MVZTableViewCellItem.h"
 #import "MVZTableView.h"
 
-#import <RSBTableViewManager.h>
-#import <ReactiveCocoa.h>
+#import "RSBTableViewManager.h"
+#import "ReactiveCocoa.h"
 
 @interface MVZTableViewSectionItem ()
 

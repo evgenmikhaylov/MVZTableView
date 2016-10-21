@@ -6,7 +6,7 @@
 //  Copyright © 2016 Igor. All rights reserved.
 //
 
-#import <RSBTableViewCellItem.h>
+#import "RSBTableViewCellItem.h"
 
 @protocol MVZTableViewCellModelProtocol;
 

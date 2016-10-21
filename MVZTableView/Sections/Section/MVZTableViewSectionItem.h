@@ -6,7 +6,7 @@
 //  Copyright © 2016 Igor. All rights reserved.
 //
 
-#import <RSBTableViewSectionItem.h>
+#import "RSBTableViewSectionItem.h"
 
 @protocol MVZTableViewCellItemsFactoryProtocol;
 @protocol MVZTableViewSectionModelProtocol;

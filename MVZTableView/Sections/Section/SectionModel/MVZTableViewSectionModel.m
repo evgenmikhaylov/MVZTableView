@@ -7,7 +7,7 @@
 //
 
 #import "MVZTableViewSectionModel.h"
-#import <ReactiveCocoa.h>
+#import "ReactiveCocoa.h"
 
 @interface MVZTableViewSectionModel ()
 
