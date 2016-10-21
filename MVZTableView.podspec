@@ -44,7 +44,7 @@ s.subspec 'Sections' do |ss|
     end
   end
 end
-s.dependency 'ReactiveCocoa'
+s.dependency 'ReactiveCocoa', '~> 2.5'
 s.dependency 'RSBTableViewManager'
 s.dependency 'MVZMutableArray'
 s.dependency 'MVZExtensions'
