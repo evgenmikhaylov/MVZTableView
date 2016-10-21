@@ -1,0 +1,16 @@
+PODS:
+  - MVZTableView (0.1.0)
+
+DEPENDENCIES:
+  - MVZTableView (from `../`)
+
+EXTERNAL SOURCES:
+  MVZTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MVZTableView: 9de073b6702af3cf854aaafedc23df7c2587ed69
+
+PODFILE CHECKSUM: 531670cab55af2fccc71d64463c7d5ef8028e0bb
+
+COCOAPODS: 1.1.0.rc.3

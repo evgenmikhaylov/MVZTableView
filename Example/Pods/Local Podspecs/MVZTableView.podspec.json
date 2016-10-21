@@ -1,0 +1,22 @@
+{
+  "name": "MVZTableView",
+  "version": "0.1.0",
+  "summary": "A short description of MVZTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MVZTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Evgeny Mikhaylov": "evgenmikhaylov@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MVZTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MVZTableView/Classes/**/*"
+}
